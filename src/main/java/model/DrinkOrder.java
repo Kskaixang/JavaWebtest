@@ -21,7 +21,7 @@ public class DrinkOrder {
 		this.type = type;
 		this.size = size;
 		
-		this.ice = ice.equals("yes");
+		this.ice = ice.equalsIgnoreCase("yes");
 		this.price = priceTable.get(type).get(size);
 	}
 	
