@@ -21,7 +21,7 @@ public class Guestbook {
 
 	@Override
 	public String toString() {
-		return "Guestbook [message=" + message + ", date=" + date + "]" + "/n";
+		return "Guestbook [message=" + message + ", date=" + date + "]";
 	}
 	
 	

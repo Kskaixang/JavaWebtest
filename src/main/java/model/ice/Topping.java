@@ -1,0 +1,23 @@
+package model.ice;
+
+import java.util.*;
+
+public class Topping {
+	
+	private List<String> toppings;
+	private static final int TOPPING_PRICE = 10;
+	
+	public Topping(String[] toppingArray) {
+		this.toppings = (toppingArray == null) ? null : Arrays.asList(toppingArray);
+	}
+
+	public List<String> getToppings() {
+		return toppings;
+	}
+	
+	//計算topping 配料總金額
+	public int calculateToppingPrice() {
+		return (toppings == null) ? 0 : toppings.size() * TOPPING_PRICE;
+	}
+
+}
