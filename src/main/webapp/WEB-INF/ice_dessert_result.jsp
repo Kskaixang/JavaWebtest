@@ -43,8 +43,8 @@
 								<td title="按我一下刪除" style="cursor: pointer;">❌</td>
 								<td> <%--自定義 --%>
 								<form method="POST" action="/JavaWeb/iceD">
-				                    <input type="hidden" name="odid" value="${iceOrder.id}" />❌
-				                    <input type="submit" value="刪除" />
+				                    <input type="hidden" name="odid" value="${iceOrder.id}" />
+				                    <input type="submit" value="❌"  style="cursor: pointer;"/>
 				                </form>
 								</td><%--自定義 --%>			
 							</tr>
@@ -54,7 +54,7 @@
 					</tbody>
 					<tfoot>
 						<tr style="background-color: #DDDDDD">
-							<td colspan="3" style="text-align: right;">總金額</td>
+							<td colspan="5" style="text-align: right;">總金額</td>
 							<td>
 								<fmt:formatNumber value="${ totalPriceSum }" type="currency" maxFractionDigits="0" />
 							</td>
